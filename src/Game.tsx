@@ -171,7 +171,7 @@ function Game(props: GameProps) {
     if (key === "大/小") {
       key = toKogaki(key);
     }
-    if (/^[a-zあ-ん]$/i.test(key)) {
+    if (/^[a-zぁ-ん]$/i.test(key)) {
       setCurrentGuess((guess) => {
         const newGuess = guess + key.toLowerCase();
         return (
