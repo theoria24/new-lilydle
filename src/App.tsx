@@ -67,7 +67,7 @@ function App() {
 
   return (
     <div className={"App-container" + (colorBlind ? " color-blind" : "")}>
-      <h1>
+      <h1>アサルトリリィ
         {difficulty === 0 ? (
           "わーどる"
         ) : difficulty === 1 ? (

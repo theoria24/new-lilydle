@@ -6,12 +6,12 @@ export function About() {
   return (
     <div className="App-about">
       <p>
-        <i>Waadoru</i>
+        <i>アサルトリリィわーどる</i>
         は、単語当てゲーム
         <a href="https://www.powerlanguage.co.uk/wordle/">
           <i>Wordle</i>
         </a>
-        の日本語版です。
+        のアサルトリリィ版（日本語）です。
         <a href="https://www.powerlanguage.co.uk/wordle/">
           <i>Wordle</i>
         </a>
@@ -22,15 +22,34 @@ export function About() {
         <a href="https://hellowordl.net">
           <i>Hello Wordl</i>
         </a>
-        からフォークして作りました。 日本語へローカライズするために、
-        オリジナルのゲームにいくつかのルールを加えています。
+        の<a href="https://github.com/skytomo221">skytomo</a>さんによるフォーク
+        <a href="https://github.com/skytomo221/waadoru">
+          <i>waadoru</i>
+        </a>をフォークして使用しています。
+        日本語へローカライズするために、オリジナルのゲームにいくつかのルールが加えられています。
       </p>
+      <hr />
+      <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+          <img alt="Creative Commons License" style={{ borderWidth: 0 }} src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+        </a>
+        <br />
+        本サイトが辞書に利用するアサルトリリィ関連データは、
+        <a href="https://github.com/Assault-Lily/LuciaDB">
+          LuciaDB
+        </a>
+        によって
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja">
+          クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際 ライセンス
+        </a>
+        のもとに提供されています。
+      </p>
+      <hr />
       <p>
         お題の単語は{maxGuesses}回以内に当てます。
         <br />
         単語を推測すると、それに対してヒントが与えられます。
       </p>
-      <hr />
       <p>
         <h2>よくわかる五十音表</h2>
         <table className="kana-table">
@@ -423,23 +442,21 @@ export function About() {
       <hr />
       <p>
         <h2>辞書について</h2>
-        辞書は、名詞、形容詞及び動詞が含まれています。外来語も含まれています。
-        固有名詞や代名詞、副詞は基本的に含まれていませんが、たまに含まれていることがあるのでご了承ください。
-        活用語は、すべて終止形です。
+        辞書は、リリィ、CHARM、レギオンの名前が含まれます。聖メルクリウスインターナショナルスクールのレギオンにおける「第n飛空艇団」の部分は省略されています（長いので）。
       </p>
       <hr />
       <p>
         問題やバグが発生した場合は
-        <a href="https://github.com/skytomo221/waadoru/issues">ここ</a>
-        から報告するか、Twitterで
-        <a href="https://twitter.com/skytomo221">@skytomo221</a>
+        <a href="https://github.com/theoria24/new-lilydle/issues">ここ</a>
+        から報告するか、misskeyなどのActivityPubサーバーより
+        <a href="https://misskey.assaultli.ly/@theoria">@theoria@misskey.assaultli.ly</a>
         にご連絡ください。
       </p>
       <p>
         このゲームはこれからも無料で広告表示もありませんが、
         <br />
         望めば
-        <a href="https://ko-fi.com/skytomo">私にコーヒーを一杯おごる</a>
+        <a href="https://ko-fi.com/theoria">私にコーヒーを一杯おごる</a>
         こともできます。
       </p>
     </div>

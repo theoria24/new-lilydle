@@ -1,5 +1,5 @@
 import { toHiragana } from "wanakana";
-import dictionary from "./dictionary.json";
+import dictionary from "./assaultlily.json";
 
 export enum Difficulty {
   Normal,

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Row, RowState } from "./Row";
 import { Clue, clue, describeClue, violation } from "./clue";
 import { Keyboard } from "./Keyboard";
-import targetList from "./targets.json";
+import targetList from "./assaultlily.json";
 import {
   dictionarySet,
   Difficulty,
@@ -36,8 +36,8 @@ interface GameProps {
 }
 
 const targets = targetList;
-const minLength = 3;
-const maxLength = 10;
+const minLength = 2;
+const maxLength = 13;
 
 function randomTarget(wordLength: number): string {
   const eligible = targets.filter((word) => word.length === wordLength);
@@ -74,9 +74,9 @@ if (initChallenge && !dictionarySet.has(initChallenge)) {
 
 function parseUrlLength(): number {
   const lengthParam = urlParam("length");
-  if (!lengthParam) return 5;
+  if (!lengthParam) return 6;
   const length = Number(lengthParam);
-  return length >= minLength && length <= maxLength ? length : 5;
+  return length >= minLength && length <= maxLength ? length : 6;
 }
 
 function parseUrlGameNumber(): number {
@@ -116,7 +116,7 @@ function Game(props: GameProps) {
     }
     setChallenge("");
     const newWordLength =
-      wordLength >= minLength && wordLength <= maxLength ? wordLength : 5;
+      wordLength >= minLength && wordLength <= maxLength ? wordLength : 6;
     setWordLength(newWordLength);
     setTarget(randomTarget(newWordLength));
     setHint("");
@@ -445,7 +445,9 @@ function Game(props: GameProps) {
               share(
                 getChallengeUrl(target),
                 "結果をクリップボードにコピーしました！",
-                "Wordle 🇯🇵 わーどる（Waadoru）",
+                `アサルトリリィわーどる(${
+                seed ? seed : "random"
+                })`,
                 guesses
                   .map((guess) =>
                     clue(guess, target)
