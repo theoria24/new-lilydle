@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/new-lilydle/static/css/main.a0b64b94.css",
+    "main.js": "/new-lilydle/static/js/main.584a459e.js",
+    "index.html": "/new-lilydle/index.html",
+    "main.a0b64b94.css.map": "/new-lilydle/static/css/main.a0b64b94.css.map",
+    "main.584a459e.js.map": "/new-lilydle/static/js/main.584a459e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0b64b94.css",
+    "static/js/main.584a459e.js"
+  ]
+}
